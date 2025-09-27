@@ -1,0 +1,1 @@
+(function(){const WA_NUMBER="919106766028";const PREFILLED=encodeURIComponent("Hi Team Strategies Studio! I'm interested in HR consulting. Please connect.");const el=document.getElementById("wa-fab");if(el){el.href=`https://wa.me/${WA_NUMBER}?text=${PREFILLED}`;}})();

@@ -1,0 +1,5 @@
+:root{ --blue:#0b5bd3; --red:#e53935; }
+.floating-whatsapp{position:fixed;right:22px;bottom:22px;width:58px;height:58px;display:grid;place-items:center;background:#25D366;border:2px solid var(--blue);border-radius:999px;box-shadow:0 8px 18px rgba(0,0,0,.18);z-index:9999;transition:transform .18s ease,box-shadow .18s ease,border-color .18s ease}
+.floating-whatsapp img{display:block;width:28px;height:28px}
+.floating-whatsapp:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(0,0,0,.22);border-color:var(--red)}
+@media (max-width:640px){.floating-whatsapp{right:16px;bottom:16px;width:54px;height:54px}}
