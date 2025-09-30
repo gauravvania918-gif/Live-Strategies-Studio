@@ -22,7 +22,7 @@ h1,h2,h3,h4{color:var(--brand-dark)}
   gap:16px; transition: padding .2s ease;
 }
 .logo-img{
-  height:60px; width:auto;
+  height:100px; width:auto;
   transition: height .2s ease, transform .2s ease, opacity .2s ease;
 }
 .main-nav{display:flex;gap:16px;align-items:center}
@@ -31,7 +31,7 @@ h1,h2,h3,h4{color:var(--brand-dark)}
 .main-nav .button{padding:8px 12px;border-radius:12px;background:var(--brand-dark);color:#fff}
 /* Shrink state when page is scrolled (toggled by JS) */
 .site-header.scrolled .header-row{ padding:6px 0; }
-.site-header.scrolled .logo-img{ height:120px; }
+.site-header.scrolled .logo-img{ height:140px; }
 
 /* =========================
    Hero Slider (full-bleed)
