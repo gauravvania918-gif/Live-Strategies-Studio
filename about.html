@@ -17,9 +17,15 @@
   <header class="site-header">
     <div class="container header-row">
       <a href="./" class="site-logo" aria-label="Strategies Studio">
-        <img src="./assets/images/logo.png" alt="Strategies Studio" width="100" height="80" loading="eager">
+        <img src="./assets/images/logo.png" alt="Strategies Studio" width="180" height="180" loading="eager">
       </a>
 
+      <script>
+  window.addEventListener("scroll", () => {
+    document.body.classList.toggle("shrink", window.scrollY > 50);
+  });
+</script>
+      
       <nav class="main-nav">
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
