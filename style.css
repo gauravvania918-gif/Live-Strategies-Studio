@@ -31,7 +31,7 @@ h1,h2,h3,h4{color:var(--brand-dark)}
 .main-nav .button{padding:8px 12px;border-radius:12px;background:var(--brand-dark);color:#fff}
 /* Shrink state when page is scrolled (toggled by JS) */
 .site-header.scrolled .header-row{ padding:6px 0; }
-.site-header.scrolled .logo-img{ height:80px; }
+.site-header.scrolled .logo-img{ height:120px; }
 
 /* =========================
    Hero Slider (full-bleed)
