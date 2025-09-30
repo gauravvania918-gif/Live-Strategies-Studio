@@ -1,5 +1,4 @@
-# Write the merged style.css content to a downloadable file
-css_content = r""":root{
+:root{
   --brand-dark:#0C1C57; --brand-accent:#E30613;
   --ink:#0C1C57; --ink-2:#2a366b; --line:#e5e7eb;
   --bg:#ffffff; --bg-alt:#f7f8fa;
@@ -22,18 +21,23 @@ h1,h2,h3,h4{color:var(--brand-dark)}
   gap:16px; transition: padding .2s ease;
 }
 .logo-img {
-  height: 90px;   /* bigger default size */
+  height: 90px;              /* default larger size */
+  max-height: 100px;         /* cap */
   width: auto;
+  object-fit: contain;
+  background: #fff;          /* clean background */
+  padding: 4px;              /* breathing space */
+  border-radius: 6px;        /* rounded edges */
+  display: block;
   transition: height .2s ease, transform .2s ease, opacity .2s ease;
 }
-.site-header.scrolled .logo-img { height: 60px; } /* shrinks but still visible */
 .main-nav{display:flex;gap:16px;align-items:center}
 .main-nav a{text-decoration:none;color:var(--brand-dark)}
 .main-nav a:hover{color:var(--brand-accent)}
 .main-nav .button{padding:8px 12px;border-radius:12px;background:var(--brand-dark);color:#fff}
 /* Shrink state when page is scrolled (toggled by JS) */
 .site-header.scrolled .header-row{ padding:6px 0; }
-.site-header.scrolled .logo-img{ height:140px; }
+.site-header.scrolled .logo-img{ height:60px; }
 
 /* =========================
    Hero Slider (full-bleed)
@@ -132,8 +136,3 @@ h1,h2,h3,h4{color:var(--brand-dark)}
 @media (max-width: 768px) {
   .caption { bottom: 8%; padding: 12px 14px; }
 }
-"""
-with open("/mnt/data/style.css", "w", encoding="utf-8") as f:
-    f.write(css_content)
-
-"/mnt/data/style.css"
