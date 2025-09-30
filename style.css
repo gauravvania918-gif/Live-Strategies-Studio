@@ -21,10 +21,12 @@ h1,h2,h3,h4{color:var(--brand-dark)}
   display:flex; align-items:center; justify-content:space-between; padding:10px 0;
   gap:16px; transition: padding .2s ease;
 }
-.logo-img{
-  height:100px; width:auto;
+.logo-img {
+  height: 90px;   /* bigger default size */
+  width: auto;
   transition: height .2s ease, transform .2s ease, opacity .2s ease;
 }
+.site-header.scrolled .logo-img { height: 60px; } /* shrinks but still visible */
 .main-nav{display:flex;gap:16px;align-items:center}
 .main-nav a{text-decoration:none;color:var(--brand-dark)}
 .main-nav a:hover{color:var(--brand-accent)}
