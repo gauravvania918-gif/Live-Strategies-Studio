@@ -1,5 +1,6 @@
-  <!doctype html>
-<html lang="en"><head>
+<!doctype html>
+<html lang="en">
+<head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>About Us | Strategies Studio</title>
@@ -12,14 +13,14 @@
   <!-- Favicons (keep only these two, both in /assets/images/) -->
   <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32.png">
-  
-</head><body>
-  <header class="site-header">
+</head>
+<body>
+  <header class="site-header" id="siteHeader">
     <div class="container header-row">
       <a href="./" class="site-logo" aria-label="Strategies Studio">
-        <img src="./assets/images/logo.png" alt="Strategies Studio" width="180" height="180" loading="eager">
+        <img src="./assets/images/logo.png" alt="Strategies Studio" class="logo-img" width="180" height="180" loading="eager">
       </a>
-      
+
       <nav class="main-nav">
         <a href="about.html">About Us</a>
         <a href="services.html">Services</a>
@@ -28,48 +29,71 @@
       </nav>
     </div>
   </header>
-<main class="container">
 
-
-<!-- Merged from Home (slider + content) -->
-<section class="hero">
-    <div class="slider">
+  <!-- Full-bleed hero (moved outside .container) -->
+  <section class="hero">
+    <div class="slider" id="slider">
       <div class="slide active">
-        <img src="./assets/images/carousel-1.jpg" alt="HR puzzle Recruiting" />
-        <div class="caption"><span class="kicker">About</span><h1>HR Strategies Studio</h1><p>People-first, data-driven HR strategies that power growth. Set your destination with us.</p></div>
+        <img src="./assets/images/carousel-1.jpg" alt="HR puzzle Recruiting">
+        <div class="caption">
+          <span class="kicker">About</span>
+          <h1>HR Strategies Studio</h1>
+          <p>People-first, data-driven HR strategies that power growth. Set your destination with us.</p>
+        </div>
       </div>
+
       <div class="slide">
-        <img src="./assets/images/carousel-2.jpeg" alt="Innovative HR teamwork" />
-        <div class="caption"><span class="kicker">Capabilities</span><h1>From Hire to Inspire</h1><p>Talent Acquisition, Engagement, Training, and Compliance — practical execution with measurable impact.</p></div>
+        <img src="./assets/images/carousel-2.jpeg" alt="Innovative HR teamwork">
+        <div class="caption">
+          <span class="kicker">Capabilities</span>
+          <h1>From Hire to Inspire</h1>
+          <p>Talent Acquisition, Engagement, Training, and Compliance — practical execution with measurable impact.</p>
+        </div>
       </div>
+
       <div class="slide">
-        <img src="./assets/images/carousel-3.jpg" alt="Handshake welcome" />
-        <div class="caption"><span class="kicker">Promise</span><h1>Set Your Destination</h1><p>Clear direction. Partner mindset. Outcomes you can feel across the organization.</p></div>
+        <img src="./assets/images/carousel-3.jpg" alt="Handshake welcome">
+        <div class="caption">
+          <span class="kicker">Promise</span>
+          <h1>Set Your Destination</h1>
+          <p>Clear direction. Partner mindset. Outcomes you can feel across the organization.</p>
+        </div>
       </div>
-      <button class="nav prev" aria-label="Previous">‹</button>
-      <button class="nav next" aria-label="Next">›</button>
+
+      <button class="nav prev" aria-label="Previous" data-dir="-1">‹</button>
+      <button class="nav next" aria-label="Next" data-dir="1">›</button>
     </div>
   </section>
 
-  <section>
-    <h1 class="underlined">About Us</h1>
-    <p><strong>Set Your Destination with Us.</strong> Every business has a journey. Some are just beginning, others are growing rapidly, and many are at a crossroads, unsure of the next step. At HR Strategies Studio, we believe that success does not happen by chance, it is guided by clear direction and thoughtful planning. That is why our work revolves around helping organizations set their destination and equipping them with the right HR strategies to get there.</p>
-    <p>We create people-focused strategies that bring out the best in your workforce and make HR a true growth partner for your business.</p>
-  </section>
-  <section id="vision"><h2 class="underlined">Our Vision</h2><p>HR as the engine of transformation—workplaces where employees feel valued and leaders achieve operational excellence.</p></section>
-  <section id="mission"><h2 class="underlined">Our Mission</h2>
-    <p>Partner as a trusted advisor. No “off-the-shelf” solutions. Understand goals and culture before designing practical, sustainable strategies.</p>
-  </section>
-  <section id="team"><h2 class="underlined">Our Team</h2>
-    <p>Experienced HR professionals across recruitment, training, compliance, performance, compensation, and more. We partner from design to implementation, combining proven practice with fresh thinking.</p>
-  </section>
+  <main class="container">
+    <section>
+      <h1 class="underlined">About Us</h1>
+      <p><strong>Set Your Destination with Us.</strong> Every business has a journey. Some are just beginning, others are growing rapidly, and many are at a crossroads, unsure of the next step. At HR Strategies Studio, we believe that success does not happen by chance, it is guided by clear direction and thoughtful planning. That is why our work revolves around helping organizations set their destination and equipping them with the right HR strategies to get there.</p>
+      <p>We create people-focused strategies that bring out the best in your workforce and make HR a true growth partner for your business.</p>
+    </section>
 
-</main>
+    <section id="vision">
+      <h2 class="underlined">Our Vision</h2>
+      <p>HR as the engine of transformation—workplaces where employees feel valued and leaders achieve operational excellence.</p>
+    </section>
+
+    <section id="mission">
+      <h2 class="underlined">Our Mission</h2>
+      <p>Partner as a trusted advisor. No “off-the-shelf” solutions. Understand goals and culture before designing practical, sustainable strategies.</p>
+    </section>
+
+    <section id="team">
+      <h2 class="underlined">Our Team</h2>
+      <p>Experienced HR professionals across recruitment, training, compliance, performance, compensation, and more. We partner from design to implementation, combining proven practice with fresh thinking.</p>
+    </section>
+  </main>
+
   <footer class="mega-footer">
     <div class="container footer-grid">
       <div class="col brand-col">
-        <img src="./assets/images/logo.png" alt="Strategies Studio" class="footer-logo" loading="lazy"/>
+        <img src="./assets/images/logo.png" alt="Strategies Studio" class="footer-logo" loading="lazy">
       </div>
+
       <nav class="col">
         <h4>Quick Links</h4>
         <ul class="list">
@@ -80,6 +104,7 @@
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+
       <div class="col">
         <h4>Services</h4>
         <ul class="list">
@@ -92,6 +117,7 @@
         </ul>
       </div>
     </div>
+
     <div class="container tiny-row">
       <small>© <span id="year"></span> Strategies Studio</small>
     </div>
@@ -99,7 +125,7 @@
 
   <!-- Floating WhatsApp -->
   <a href="https://wa.me/919106766028" class="float-wa" target="_blank" aria-label="WhatsApp chat">
-    <img src="./assets/images/whatsapp.png" alt="WhatsApp"/>
+    <img src="./assets/images/whatsapp.png" alt="WhatsApp">
   </a>
 
   <button class="quick-inquiry" type="button" aria-haspopup="dialog" aria-controls="qi-modal">Quick Inquiry</button>
@@ -114,11 +140,11 @@
       <div class="modal-body">
         <form class="inquiry" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <div class="grid-2">
-            <input type="text" name="name" placeholder="Your name" required />
-            <input type="email" name="email" placeholder="Work email" required />
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Work email" required>
           </div>
           <div class="grid-2">
-            <input type="tel" name="phone" placeholder="Phone (optional)" />
+            <input type="tel" name="phone" placeholder="Phone (optional)">
             <select name="interest" aria-label="Service interest">
               <option value="" selected>Service interest (optional)</option>
               <option>Talent Acquisition</option>
@@ -133,12 +159,13 @@
           <label class="sendcopy"><input type="checkbox" name="send_copy" value="1"> Send me a copy</label>
           <input type="hidden" name="_cc" value="">
           <input type="hidden" name="_replyto" value="">
-          <input type="hidden" name="_subject" value="Quick Inquiry from Website" />
+          <input type="hidden" name="_subject" value="Quick Inquiry from Website">
           <button type="submit" class="button accent">Send inquiry</button>
         </form>
       </div>
     </div>
   </div>
 
-  <script src="script.js"></script>
-</body></html>
+  <script src="script.js" defer></script>
+</body>
+</html>
